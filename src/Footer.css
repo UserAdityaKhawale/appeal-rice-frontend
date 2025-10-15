@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/*
+nav{
+    position: static;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: RGB(233, 236, 255);
+    gap: 10px;
+
+}
+nav img{
+    height: 35px;
+    width: 50px;
+}
+.nav1 h2{
+    font-family: Arial;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    
+}
+.rys{
+    align-items: center;
+}
+.nav2 h3{
+    font-size: 30px;
+    display: none;
+}
+    
+
+
+.nav2 h3{
+                    display: block;
+                }
+                .nav2 h4{
+                    display: none;
+
+                }
+
+*/
+
+
+/*join PT*/
+.join-pt {
+    text-align: center;
+    padding: 100px 20px;
+    color: black;
+    background-color:#8a82fa
+}
+
+.subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.mainheading{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.join {
+    background-color: #e9ecff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join:hover {
+    background-color: #cfd4ff;
+    transform: scale(1.05);
+}
+
+/* === Animated Purple Button === */
+
+.Button {
+  background: none;
+  padding: 0;
+  margin: 50px auto;
+  border: none;
+  display: block;
+  width: 300px;
+  height: 80px;
+  position: relative;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 300ms, color 300ms;
+  cursor: pointer;
+}
+
+.Button:hover,
+.Button:focus {
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.Button-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Button-line {
+  fill: none;
+  stroke-linecap: round;
+}
+
+/* Length for the path animation */
+@keyframes outer-dashoffset {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 336px 336px;
+  }
+  50% {
+    stroke-dasharray: 224px 448px;
+  }
+  100% {
+    stroke-dashoffset: 672px;
+    stroke-dasharray: 336px 336px;
+  }
+}
+
+.Button-line--outer {
+  stroke-dasharray: 336px 336px;
+  stroke-dashoffset: 0;
+  animation: outer-dashoffset 6s linear infinite;
+  stroke: #3d1fa2;
+}
+
+@keyframes inner-dashoffset {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 336px 336px;
+  }
+  50% {
+    stroke-dasharray: 224px 448px;
+  }
+  100% {
+    stroke-dashoffset: -672px;
+    stroke-dasharray: 336px 336px;
+  }
+}
+
+.Button-line--inner {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 336px 336px;
+  animation: inner-dashoffset 5s linear infinite;
+  stroke: #715bdf;
+}
+
+.Button-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #25143f;
+  text-transform: uppercase;
+}
+/* === Hover Intercontrast for Purple Button === */
+.Button:hover .Button-content {
+  color: #ffffff; /* text becomes white */
+  background-color: #2f1e68; /* background becomes dark purple */
+  border-radius: 36px;
+  transition: all 0.4s ease;
+}
+
+.Button:not(:hover) .Button-content {
+  background-color: transparent; /* transparent when normal */
+  transition: all 0.4s ease;
+}
+
+
+/* Footer */
+footer {
+    background-color: #e9ecff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    color: #000;
+    min-height: 300px;
+}
+
+.footer-left .footer-logo img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.footer-left h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-section {
+    margin-left: 20px;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    display: block;
+    margin: 5px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* === MASKED TEXT ANIMATION === */
+.masking-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.masked-text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: transparent;
+  background-image: url('https://images.unsplash.com/photo-1588097281266-310cead47879?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687');
+  background-size: 200%;
+  background-position: 0 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 5s infinite alternate linear;
+  line-height: 1.2;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .footer-left {
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-section {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .footer-left h1 {
+        font-size: 2em;
+    }
+    .footer-logo img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    .masked-text {
+    font-size: 2rem;
+    text-align: left;
+  }
+    .join-pt{
+        padding: 80px 15px;
+    }
+    .mainheading {
+        font-size: 1.8rem;
+    }
+    .join {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
