@@ -1,5 +1,5 @@
 import React from "react";
-import gymImage from "./src/assets/GymPhoto.png";
+import gymImage from "./assets/GymPhoto.png";
 import './JoinCommunity.css';
 
 const JoinCommunity = () => {
