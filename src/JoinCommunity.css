@@ -1,0 +1,29 @@
+
+@media (max-width: 1024px) {
+  .responsive-flex {
+    flex-direction: column; 
+  }
+
+  .left-content,
+  .right-image {
+    width: 100% !important; 
+  }
+
+  .right-image img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+
+/* for phone */
+@media (max-width: 640px) {
+  .right-image img {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .left-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

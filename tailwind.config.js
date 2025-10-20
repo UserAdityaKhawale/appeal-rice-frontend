@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // This line tells Tailwind to look in all your source files
   ],
   theme: {
-    extend: {},
+  extend: {
+    fontFamily: {
+      anek: ['"Anek Tamil"', 'sans-serif'],
+    },
   },
+},
   plugins: [],
 }
